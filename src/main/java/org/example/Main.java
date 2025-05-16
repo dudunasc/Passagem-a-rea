@@ -19,13 +19,13 @@ public class Main {
             System.out.println("3 - Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
-            scanner.nextLine(); // consumir a quebra de linha
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1:
                     System.out.print("ID: ");
                     int id = scanner.nextInt();
-                    scanner.nextLine(); // consumir a quebra de linha
+                    scanner.nextLine();
 
                     System.out.print("Nome: ");
                     String nome = scanner.nextLine();

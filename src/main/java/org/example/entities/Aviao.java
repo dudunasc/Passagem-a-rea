@@ -1,12 +1,15 @@
 package org.example.entities;
 
-public class aviao {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Aviao {
     private int id;
     private String modelo;
     private int capacidade;
     private String fabricante;
 
-    public aviao(int id, String modelo, int capacidade, String fabricante) {
+    public Aviao(int id, String modelo, int capacidade, String fabricante) {
         this.id = id;
         this.modelo = modelo;
         this.capacidade = capacidade;
@@ -43,5 +46,14 @@ public class aviao {
 
     public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
+    }
+
+    private List<Voo> voos = new ArrayList<>();
+
+    public List<Voo> getVoos(){
+        return voos;
+    }
+
+    public void adicionarVoo(Voo voo) {
     }
 }

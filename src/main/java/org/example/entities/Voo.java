@@ -9,9 +9,9 @@ public class Voo {
     private String origem;
     private String destino;
     private LocalDateTime dataHora;
-    private String aviao;
+    private Aviao aviao;
 
-    public Voo(int id, String origem, String destino, LocalDateTime dataHora, String aviao) {
+    public Voo(int id, String origem, String destino, LocalDateTime dataHora, Aviao aviao) {
         this.id = id;
         this.origem = origem;
         this.destino = destino;
@@ -51,11 +51,13 @@ public class Voo {
         this.dataHora = dataHora;
     }
 
-    public String getAviao() {
+    public Aviao getAviao() {
         return aviao;
     }
 
-    public void setAviao(String aviao) {
+    public void setAviao(Aviao aviao) {
         this.aviao = aviao;
     }
+
+
 }

@@ -4,16 +4,9 @@ import java.time.LocalDateTime;
 
 public class Reserva {
     private int id;
-    private String passageiro;
-    private String voo;
+    private Passageiro passageiro;
+    private Voo voo;
     private LocalDateTime dataReserva;
-
-    public Reserva(int id, String passageiro, String voo, LocalDateTime dataReserva) {
-        this.id = id;
-        this.passageiro = passageiro;
-        this.voo = voo;
-        this.dataReserva = dataReserva;
-    }
 
     public int getId() {
         return id;
@@ -23,19 +16,19 @@ public class Reserva {
         this.id = id;
     }
 
-    public String getPassageiro() {
+    public Passageiro getPassageiro() {
         return passageiro;
     }
 
-    public void setPassageiro(String passageiro) {
+    public void setPassageiro(Passageiro passageiro) {
         this.passageiro = passageiro;
     }
 
-    public String getVoo() {
+    public Voo getVoo() {
         return voo;
     }
 
-    public void setVoo(String voo) {
+    public void setVoo(Voo voo) {
         this.voo = voo;
     }
 
@@ -44,6 +37,13 @@ public class Reserva {
     }
 
     public void setDataReserva(LocalDateTime dataReserva) {
+        this.dataReserva = dataReserva;
+    }
+
+    public Reserva(int id, Passageiro passageiro, Voo voo, LocalDateTime dataReserva) {
+        this.id = id;
+        this.passageiro = passageiro;
+        this.voo = voo;
         this.dataReserva = dataReserva;
     }
 }
