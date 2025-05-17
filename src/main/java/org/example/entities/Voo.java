@@ -58,6 +58,20 @@ public class Voo {
     public void setAviao(Aviao aviao) {
         this.aviao = aviao;
     }
+    public void setDataHora(int ano, int mes, int dia, int hora, int minuto) {
+        try {
+            this.dataHora = LocalDateTime.of(ano, mes, dia, hora, minuto);
+        } catch (DateTimeException e) {
+            System.out.println("Erro ao definir a data e hora do voo: " + e.getMessage());
+        }
+    }
 
-
+    @Override
+    public String toString() {
+        return String.format("%-10s %-20s %-20s %-20s%n",
+                this.id,
+                this.origem,
+                this.destino,
+                this.dataHora.toString());
+    }
 }

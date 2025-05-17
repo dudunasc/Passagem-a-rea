@@ -48,12 +48,13 @@ public class Aviao {
         this.fabricante = fabricante;
     }
 
-    private List<Voo> voos = new ArrayList<>();
+    private final List<Voo> voos = new ArrayList<>();
 
     public List<Voo> getVoos(){
         return voos;
     }
 
     public void adicionarVoo(Voo voo) {
+        voos.add(voo);
     }
 }
