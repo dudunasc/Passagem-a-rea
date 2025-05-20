@@ -16,6 +16,9 @@ public class Aviao {
         this.fabricante = fabricante;
     }
 
+    public Aviao(int id, String modelo, int capacidade) {
+    }
+
     public int getId() {
         return id;
     }

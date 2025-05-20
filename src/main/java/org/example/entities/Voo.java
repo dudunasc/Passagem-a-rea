@@ -74,4 +74,11 @@ public class Voo {
                 this.destino,
                 this.dataHora.toString());
     }
+
+    public int getVagasDisponiveis() {
+        return aviao.getCapacidade() - aviao.getVoos().size();
+    }
+
+    public void adicionarReserva(Passageiro passageiro) {
+    }
 }
